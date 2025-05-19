@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: javaapp1
+  name: mymaven
   labels:
-    app: javaapp1
+    app: mymaven
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: javaapp1
+      app: mymaven
   template:
     metadata:
       labels:
-        app: javaapp1
+        app: mymaven
     spec:
       containers:
-      - name: javaapp1
-        image: neehar2601/javaapp2:v1
+      - name: mymaven
+        image: mymaven/sneha758:v1
         ports:
         - containerPort: 8080

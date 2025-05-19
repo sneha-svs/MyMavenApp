@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: mymaven
-        image: mymaven/sneha758:v1
+        image: mymaven/sneha758:v2
         ports:
         - containerPort: 8080
